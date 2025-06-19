@@ -1,0 +1,66 @@
+/* Navigation Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.main-header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: xxx-large;
+    font-weight: 400;
+    font-family: 'DM Serif Display', Georgia, serif;
+    color: #000;
+}
+
+.nav-links a {
+    font-family: 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+    margin-left: 30px;
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Coming Soon */
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    font-family: 'DM Serif Display', cursive, serif;
+    font-size: 3.5rem;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
