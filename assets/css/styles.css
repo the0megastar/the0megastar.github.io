@@ -112,17 +112,6 @@
         z-index: 1001;
     }
 
-    .nav-toggle-label span {
-        display: block;
-        height: 3px;
-        width: 28px;
-        background: #000;
-        margin: 5px 0;
-        border-radius: 2px;
-        transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
-        transform-origin: center;
-    }
-
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -149,18 +138,70 @@
         display: flex;
     }
 
-    /* Hamburger animation to X */
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: rotate(45deg);
+    /*!* Hamburger animation to X *!*/
+    /*.nav-toggle:checked + .nav-toggle-label span:nth-child(1) {*/
+    /*    transform: rotate(45deg);*/
+    /*}*/
+    /*.nav-toggle:checked + .nav-toggle-label span:nth-child(2) {*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*.nav-toggle:checked + .nav-toggle-label span:nth-child(3) {*/
+    /*    transform: rotate(-45deg);*/
+    /*}*/
+    /* Hamburger SVG Styles */
+    .hamburger-svg {
+        width: 36px;
+        height: 36px;
+        display: block;
     }
 
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
-        opacity: 0;
+    .line {
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke: #000; /* Black lines */
+        transition: all 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
     }
 
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: rotate(-45deg);
+    .top, .bottom {
+        transform-origin: 50px 50px;
     }
+
+    .middle {
+        transition: opacity 0.3s;
+    }
+
+    /* Hamburger animation to X when checked */
+    @media (max-width: 900px) {
+        .nav-toggle-label {
+            display: flex;
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            z-index: 1001;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Animate SVG lines on menu open */
+        .nav-toggle:checked + .nav-toggle-label .top {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .nav-toggle:checked + .nav-toggle-label .middle {
+            opacity: 0;
+        }
+
+        .nav-toggle:checked + .nav-toggle-label .bottom {
+            transform: rotate(-45deg) translate(12px, -12px);
+        }
+    }
+
 
 }
 
