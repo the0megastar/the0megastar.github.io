@@ -301,16 +301,16 @@
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.line.top,
-.line.bottom {
+.top,
+.bottom {
     transform-origin: 50px 50px;
 }
 
-.line.middle {
+.middle {
     transition: opacity 0.3s ease;
 }
 
-/* Hamburger transforms to X when checked */
+/* Animation to X */
 .nav-toggle:checked + .nav-toggle-label .top {
     transform: rotate(45deg);
 }
