@@ -112,6 +112,17 @@
         z-index: 1001;
     }
 
+    .nav-toggle-label span {
+        display: block;
+        height: 3px;
+        width: 28px;
+        background: #000;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+        transform-origin: left center;
+    }
+
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -131,10 +142,6 @@
         width: 100%;
         box-sizing: border-box;
         text-align: left;
-    }
-
-    .nav-toggle-label span {
-        transform-origin: left center;
     }
 
     /* Show nav when hamburger is checked */
