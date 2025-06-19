@@ -268,7 +268,7 @@
 }
 
 /* ----------------------
-   Hamburger Menu (Hidden Desktop)
+   Hamburger Toggle Styles
 ----------------------- */
 
 .nav-toggle {
@@ -276,7 +276,7 @@
 }
 
 .nav-toggle-label {
-    display: none;
+    display: flex;
     cursor: pointer;
     width: 36px;
     height: 36px;
@@ -298,25 +298,30 @@
     stroke: #000;
     stroke-width: 6;
     stroke-linecap: round;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 500ms ease;
 }
 
-.top,
-.bottom {
-    transform-origin: 50px 50px;
+.top {
+    transform-origin: 26px 40px;
 }
 
 .middle {
-    transition: opacity 0.3s ease;
+    stroke-dasharray: 60 60;
+    transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
 }
 
-/* Animation to X */
+.bottom {
+    transform-origin: 26px 60px;
+}
+
+/* Toggle Animation to X */
 .nav-toggle:checked + .nav-toggle-label .top {
     transform: rotate(45deg);
 }
 
 .nav-toggle:checked + .nav-toggle-label .middle {
-    opacity: 0;
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
 }
 
 .nav-toggle:checked + .nav-toggle-label .bottom {
