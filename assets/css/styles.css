@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* centers in viewport, adjust as needed */
+  min-height: 70vh;
 }
 
 .coming-main {
@@ -75,7 +75,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   margin-top: 0.5em;
-  margin-left: 1.5rem; /* subtle indent for "Soon" */
+  margin-left: 1.5rem;
   text-align: left;
 }
 
