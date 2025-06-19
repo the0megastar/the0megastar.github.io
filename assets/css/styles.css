@@ -50,3 +50,32 @@
 .nav-links a:hover::after {
     width: 100%;
 }
+
+/* Coming Soon */
+.coming-soon {
+  margin-top: 10vh;
+  text-align: left;
+  font-family: 'DM Serif Display', cursive, serif;
+  font-size: 3rem;
+  color: #222;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.coming-soon .coming {
+  display: block;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #7b3fe4;
+}
+
+.coming-soon .soon {
+  display: block;
+  margin-left: 2.5rem;
+  font-size: 3rem;
+  font-style: italic;
+  color: #e43f7b;
+  font-weight: 400;
+}
+
