@@ -52,31 +52,15 @@
 }
 
 /* Coming Soon */
-.coming-soon-center {
+.coming-soon {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-}
-
-.coming-main {
-  text-align: center;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', cursive, serif;
   font-size: 3.5rem;
   color: #111;
-  letter-spacing: 2px;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.coming-soon-sub {
-  display: block;
-  color: #555;
-  font-size: 2.5rem;
   font-weight: 400;
-  margin-top: 0.5em;
-  margin-left: 1.5rem;
-  text-align: left;
+  letter-spacing: 2px;
+  text-align: center;
 }
-
-
