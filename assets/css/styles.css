@@ -276,7 +276,7 @@
 }
 
 .nav-toggle-label {
-    display: flex;
+    display: none;
     cursor: pointer;
     width: 36px;
     height: 36px;
