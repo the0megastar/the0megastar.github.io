@@ -6,11 +6,18 @@
     <title>{{ page.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css"/>
+    {% if page.appcss %}
+    <link rel="stylesheet" href="{{ page.appcss }}">
+    {% endif %}
 </head>
 <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
+{% include header.html %}
+<main>
+    {{ content }}
+</main>
+<script src="/assets/js/script.js"></script>
+{% if page.appjs %}
+<script src="{{ page.appjs }}"></script>
+{% endif %}
 </body>
 </html>
