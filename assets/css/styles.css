@@ -133,6 +133,10 @@
         text-align: left;
     }
 
+    .nav-toggle-label span {
+        transform-origin: left center;
+    }
+
     /* Show nav when hamburger is checked */
     .nav-toggle:checked + .nav-toggle-label + .nav-links {
         display: flex;
