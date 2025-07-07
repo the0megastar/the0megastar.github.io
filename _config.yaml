@@ -1,8 +1,5 @@
-title: The0megastar
-description: Apps, tools, and freelance work — personal support, project inquiries, and dedicated privacy for each app, all in one place.
-baseurl: "" # Leave this empty unless you're using a subfolder repo
+title: The 0megastar
+description: Apps and tools by the0megastar.
 url: "https://www.the0megastar.com"
-
 theme: minima
 
-markdown: kramdown
