@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: minima
 title: Privacy Policy
 permalink: /apps/dollarcost/privacy/
 ---
