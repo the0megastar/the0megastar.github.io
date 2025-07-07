@@ -1,9 +1,10 @@
 ---
-layout: minima
+layout: default
 title: Privacy Policy
 permalink: /apps/dollarcost/privacy/
 ---
 
+<div class="policy-wrapper">
 # Privacy Policy
 
 **Effective Date:** July 7, 2025
@@ -67,3 +68,4 @@ The App is for informational and educational purposes only. It does **not** prov
 ## Contact
 
 For questions about this Privacy Policy, please [contact us here](/contact/).
+</div>

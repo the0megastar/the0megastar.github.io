@@ -136,6 +136,34 @@ body {
     margin-right: auto;
 }
 
+/* Privacy Policy */
+.policy-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.policy-wrapper h1,
+.policy-wrapper h2,
+.policy-wrapper h3 {
+    font-family: "DM Serif Display", serif;
+    color: #1d1d1f;
+    margin-top: 2rem;
+}
+
+.policy-wrapper a {
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.policy-wrapper a:hover {
+    text-decoration: underline;
+}
+
+
 /* Footer Section */
 .footer-section {
     background-color: #1d1d1f;
