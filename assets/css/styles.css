@@ -241,16 +241,25 @@ html {
 }
 
 .project-entry .header-section {
-    padding: 0;
-    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 90vh;
+    padding: 2rem 5%;
+    gap: 2rem;
 }
 
 .project-entry .header-content h1 {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 1rem;
+    color: #1d1d1f;
 }
 
 .project-entry .header-image img {
-    max-width: 600px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     border-radius: 12px;
 }
