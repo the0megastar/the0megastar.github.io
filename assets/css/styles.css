@@ -235,31 +235,113 @@ html {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 3rem;
     padding: 4rem 5%;
     background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.project-entry .header-section {
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    min-height: 90vh;
-    padding: 2rem 5%;
-    gap: 2rem;
+    gap: 3rem;
+    background-color: #f9f9f9;
+    padding: 3rem 4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    transition: background-color 0.3s ease;
 }
 
-.project-entry .header-content h1 {
-    font-size: 3.5rem;
+.project-card-link:hover .project-card {
+    background-color: #fff;
+}
+
+.project-card-content h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
     color: #1d1d1f;
 }
 
-.project-entry .header-image img {
+.project-card-content .sub-headline {
+    font-size: 1.15rem;
+    color: #555;
+    max-width: 450px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-link {
+    font-weight: 600;
+    color: #0071e3;
+    font-size: 1.1rem;
+}
+
+.project-card-image img {
     width: 100%;
-    max-width: 650px;
+    max-width: 500px;
     height: auto;
     border-radius: 12px;
+    display: block;
+    margin-left: auto;
+}
+
+/* Responsive adjustments for the card */
+@media (max-width: 900px) {
+    .project-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    .project-card-content {
+        order: 2; /* Text below image on mobile */
+    }
+
+    .project-card-image {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-card-image img {
+        max-width: 400px;
+    }
+
+    .project-card-content .sub-headline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-card-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-list {
+        padding: 3rem 1.5rem;
+    }
+    .project-card {
+        padding: 2rem 1.5rem;
+    }
 }
