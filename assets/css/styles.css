@@ -216,7 +216,6 @@ html {
 /* ----------------------
    Coming Soon Section
 ----------------------- */
-
 .coming-soon {
     display: flex;
     justify-content: center;
@@ -233,133 +232,120 @@ html {
 /* ----------------------
    App Showcase Page
 ----------------------- */
-
 .app-showcase-section {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4rem 5%;
-    background-color: #ffffff;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
 }
 
 .showcase-header {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
     text-align: center;
-    margin-bottom: 4rem;
 }
 
 .showcase-header h1 {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 2.8rem;
-    color: #1d1d1f;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .showcase-header p {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     color: #555;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .app-list {
-    display: grid;
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .app-card {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    align-items: center;
-    gap: 2.5rem;
-    padding: 2rem;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
     border-radius: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.app-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+.hero-card .app-details {
+    flex: 1;
+    max-width: 500px;
 }
 
-.app-icon {
-    flex-shrink: 0;
-}
-
-.app-icon img {
+.hero-card .app-icon img {
+    max-width: 480px;
     width: 100%;
-    height: auto;
     border-radius: 12px;
-    object-fit: cover;
-    display: block;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .app-details h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #1d1d1f;
-    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
 }
 
 .app-details p {
-    margin: 0 0 1.5rem 0;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
 .app-buttons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.2s ease-in-out;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
     text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
 }
 
 .btn-primary {
-    background-color: #0071e3; /* Apple blue */
+    background-color: #111;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #0077ed;
-    transform: translateY(-2px);
+    background-color: #333;
 }
 
 .btn-secondary {
-    background-color: #f5f5f7;
-    color: #1d1d1f;
-    border: 1px solid #e5e5e5;
+    background-color: #f1f1f1;
+    color: #111;
 }
 
 .btn-secondary:hover {
-    background-color: #e8e8ed;
-    transform: translateY(-2px);
+    background-color: #e1e1e1;
 }
 
-/* Responsive for App Showcase */
+/* ✅ Mobile Responsive */
 @media (max-width: 768px) {
     .app-card {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        flex-direction: column;
         text-align: center;
     }
 
     .app-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        max-width: 100%;
     }
 
     .app-buttons {
         justify-content: center;
+    }
+
+    .app-icon img {
+        max-width: 100%;
     }
 }
