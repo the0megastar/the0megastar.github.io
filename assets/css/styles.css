@@ -260,16 +260,11 @@ html {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Changed to white */
     padding: 3rem 4rem;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid #e5e5e5;
-    transition: background-color 0.3s ease;
-}
-
-.project-card-link:hover .project-card {
-    background-color: #fff;
 }
 
 .project-card-content h1 {
