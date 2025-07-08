@@ -232,120 +232,25 @@ html {
 /* ----------------------
    App Showcase Page
 ----------------------- */
-.app-showcase-section {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-}
-
-.showcase-header {
-    max-width: 700px;
-    margin: 0 auto 3rem auto;
-    text-align: center;
-}
-
-.showcase-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.showcase-header p {
-    font-size: 1.125rem;
-    color: #555;
-}
-
-.app-list {
+.projects-list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 6rem;
+    padding: 4rem 5%;
+    background-color: #ffffff;
 }
 
-.app-card {
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+.project-entry .header-section {
+    padding: 0;
+    min-height: auto;
 }
 
-.hero-card .app-details {
-    flex: 1;
-    max-width: 500px;
+.project-entry .header-content h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
 }
 
-.hero-card .app-icon img {
-    max-width: 480px;
-    width: 100%;
+.project-entry .header-image img {
+    max-width: 600px;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-.app-details h3 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.app-details p {
-    font-size: 1.125rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.app-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #111;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #333;
-}
-
-.btn-secondary {
-    background-color: #f1f1f1;
-    color: #111;
-}
-
-.btn-secondary:hover {
-    background-color: #e1e1e1;
-}
-
-/* ✅ Mobile Responsive */
-@media (max-width: 768px) {
-    .app-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .app-details {
-        max-width: 100%;
-    }
-
-    .app-buttons {
-        justify-content: center;
-    }
-
-    .app-icon img {
-        max-width: 100%;
-    }
 }
