@@ -54,6 +54,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 4rem;
     color: #1d1d1f;
+    line-height: 1.2;
 }
 
 .features-cards {
@@ -108,6 +109,7 @@ body {
 .showcase-content h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    line-height: 1.2;
 }
 
 .showcase-image-container {
