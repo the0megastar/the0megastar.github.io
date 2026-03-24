@@ -4,10 +4,18 @@
 
 html {
     scrollbar-gutter: stable;
+    height: 100%;
 }
 
 body {
     font-family: 'Inter', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* ----------------------
