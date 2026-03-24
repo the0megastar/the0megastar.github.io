@@ -340,3 +340,225 @@ html {
         padding: 2rem 1.5rem;
     }
 }
+
+/* ----------------------
+   Homepage — Hero
+----------------------- */
+
+.home-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 5%;
+  background-color: #fff;
+}
+
+.home-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-eyebrow {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.home-headline {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #1d1d1f;
+  margin-bottom: 1.5rem;
+}
+
+.home-sub {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.home-cta {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1d1d1f;
+  padding: 0.75rem 1.75rem;
+  border-radius: 980px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.home-cta:hover {
+  background-color: #444;
+}
+
+/* ----------------------
+   Homepage — About
+----------------------- */
+
+.home-about {
+  padding: 5rem 5%;
+  background-color: #f5f5f7;
+}
+
+.home-about-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-section-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin-bottom: 2rem;
+}
+
+.home-about-body p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  max-width: 660px;
+}
+
+/* ----------------------
+   Homepage — Apps
+----------------------- */
+
+.home-apps {
+  padding: 5rem 5%;
+  background-color: #fff;
+}
+
+.home-apps-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-app-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-app-card-link:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.home-app-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.home-app-card-soon {
+  opacity: 0.75;
+  grid-template-columns: 1fr;
+}
+
+.home-app-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: #e8f4e8;
+  color: #2d7a2d;
+  padding: 3px 10px;
+  border-radius: 980px;
+  margin-bottom: 0.75rem;
+}
+
+.home-app-badge-soon {
+  background-color: #f0f0f0;
+  color: #888;
+}
+
+.home-app-card h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 0.75rem;
+}
+
+.home-app-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.65;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.home-app-stack {
+  font-size: 0.85rem;
+  color: #999;
+  letter-spacing: 0.03em;
+}
+
+.home-app-cta {
+  font-weight: 600;
+  color: #0071e3;
+  font-size: 1rem;
+}
+
+.home-app-card-image img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+}
+
+/* ----------------------
+   Homepage — Responsive
+----------------------- */
+
+@media (max-width: 900px) {
+  .home-headline {
+    font-size: 2.8rem;
+  }
+
+  .home-app-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .home-app-card-image {
+    display: none;
+  }
+
+  .home-app-card p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-headline {
+    font-size: 2.2rem;
+  }
+}
