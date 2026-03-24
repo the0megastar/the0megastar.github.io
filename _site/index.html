@@ -1,9 +1,36 @@
----
-layout: default
-title: the0megastar
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>the0megastar</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css"/>
+    
+</head>
+<body>
+<header class="main-header">
+  <div class="logo">the0megastar</div>
 
-<!-- Hero Section -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+    <svg class="hamburger-svg" viewBox="0 0 100 100">
+      <path class="line top" d="M 20,30 H 80" />
+      <path class="line middle" d="M 20,50 H 80" />
+      <path class="line bottom" d="M 20,70 H 80" />
+    </svg>
+  </label>
+
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/#about">About</a>
+    <a href="/apps/">Projects</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
 <section class="home-hero">
   <div class="home-hero-inner">
     <h1 class="home-headline">Software built for people,<br>not platforms.</h1>
@@ -65,3 +92,16 @@ title: the0megastar
   </div>
 </section>
 
+
+</main>
+<script src="/assets/js/script.js"></script>
+
+<footer class="footer-section">
+    <p>Copyright &copy; 2026 the0megastar.com. All rights reserved.</p>
+    <nav class="footer-nav">
+        <a href="/apps/">Projects</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+</footer>
+</body>
+</html>
