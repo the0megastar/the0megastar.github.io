@@ -389,12 +389,12 @@ body {
 .footer-section {
     background-color: #1d1d1f;
     color: #a0a0a5;
-    padding: 2rem 5%;
+    padding: 0.875rem 5%;
     text-align: center;
 }
 
 .footer-section p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
 
