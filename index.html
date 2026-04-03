@@ -8,7 +8,7 @@ title: the0megastar
   <div class="home-hero-inner">
     <h1 class="home-headline">Software built for people,<br>not platforms.</h1>
     <p class="home-sub">Privacy-first apps that live on your device, work without a subscription, and respect your data.</p>
-    <a href="/apps/" class="home-cta">See the work</a>
+    <a href="/#apps" class="home-cta">See the work</a>
   </div>
 </section>
 
@@ -26,42 +26,54 @@ title: the0megastar
 </section>
 
 <!-- Apps Section -->
-<section class="home-apps">
+<section class="home-apps" id="apps">
   <div class="home-apps-inner">
     <h2 class="home-section-title">Apps</h2>
 
-    <a href="/apps/dollarcost/" class="home-app-card-link">
-      <div class="home-app-card">
-        <div class="home-app-card-content">
-          <span class="home-app-badge">Available now</span>
-          <h3>DollarCost</h3>
-          <p>A dollar-cost averaging and investment calculator for macOS. Plan your strategy without risking your capital or your data.</p>
-          <span class="home-app-cta">View app &rarr;</span>
+    <article class="zinc-card">
+      <div class="card-media-wrap">
+        <img class="card-image card-image--top" src="/apps/dollarcost/images/DollarCost.png" alt="DollarCost app icon">
+      </div>
+      <div class="card-content">
+        <div class="card-header">
+          <h3 class="card-title">DollarCost</h3>
+          <span class="badge available">Available now</span>
         </div>
-        <div class="home-app-card-image">
-          <img src="/apps/dollarcost/images/DollarCost.png" alt="DollarCost app">
+        <p class="card-desc">A dollar-cost averaging and investment calculator for macOS. Plan your strategy without risking your capital or your data.</p>
+        <p class="card-meta">Swift · SwiftUI</p>
+        <a href="/apps/dollarcost/" class="btn-cta">View app</a>
+      </div>
+    </article>
+
+    <article class="zinc-card" aria-label="TradeConfidant — in development">
+      <div class="card-media-wrap card-media-wrap--placeholder">
+        <div class="card-image card-image--placeholder">TradeConfidant</div>
+      </div>
+      <div class="card-content">
+        <div class="card-header">
+          <h3 class="card-title">TradeConfidant</h3>
+          <span class="badge dev">In development</span>
         </div>
+        <p class="card-desc">A local trade journal for options and stock traders. No cloud, no subscription, no one looking at your positions but you.</p>
+        <p class="card-meta">React · TypeScript · Vite · Tauri · SQLite</p>
+        <span class="btn-cta btn-cta--disabled" aria-disabled="true">Coming soon</span>
       </div>
-    </a>
+    </article>
 
-    <div class="home-app-card home-app-card-soon">
-      <div class="home-app-card-content">
-        <span class="home-app-badge home-app-badge-soon">In development</span>
-        <h3>TradeConfidant</h3>
-        <p>A local trade journal for options and stock traders. No cloud, no subscription, no one looking at your positions but you.</p>
-        <p class="home-app-stack">React · TypeScript · Vite · Tauri · SQLite</p>
+    <article class="zinc-card" aria-label="gymStack — in development">
+      <div class="card-media-wrap">
+        <img class="card-image card-image--gymstack" src="/apps/gymstack/images/gymStack.webp" alt="gymStack app preview">
       </div>
-    </div>
-
-    <div class="home-app-card home-app-card-soon">
-      <div class="home-app-card-content">
-        <span class="home-app-badge home-app-badge-soon">In development</span>
-        <h3>gymStack</h3>
-        <p>A fitness and wellness tracker built to go wherever you are. Same philosophy as everything else here.</p>
-        <p class="home-app-stack">React · TypeScript · Vite · Tauri</p>
+      <div class="card-content">
+        <div class="card-header">
+          <h3 class="card-title">gymStack</h3>
+          <span class="badge dev">In development</span>
+        </div>
+        <p class="card-desc">A fitness and wellness tracker built to go wherever you are. Same philosophy as everything else here.</p>
+        <p class="card-meta">React Native · Expo · TypeScript · SQLite</p>
+        <span class="btn-cta btn-cta--disabled" aria-disabled="true">Coming soon</span>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
-
